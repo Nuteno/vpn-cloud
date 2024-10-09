@@ -1,12 +1,12 @@
 <?php
+include ('token.php');
 ini_set("error_reporting", E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
-define("TG_TOKEN", "7399183070:AAEdlbYRofGHdKPBFoT075wJ_vMJvlgtSms");
 define("TG_USER_ID", "831967222");
 $getQuery = array(
-    "url" => "https://test.bots-time.ru/",
+    "url" => "https://testbots.-time.ru/",
 );
 
 $ch = curl_init("https://api.telegram.org/bot".TG_TOKEN . "/setWebhook?" .http_build_query($getQuery));
