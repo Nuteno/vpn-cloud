@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 
 define("TG_USER_ID", "831967222");
 $getQuery = array(
-    "url" => "https://nuteno.ru/index.php",
+    "url" => "https://nuteno.ru/vpn-cloud/index.php",
 );
 
 $ch = curl_init("https://api.telegram.org/bot".TG_TOKEN . "/setWebhook?" .http_build_query($getQuery));
